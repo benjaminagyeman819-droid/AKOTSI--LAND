@@ -17,12 +17,8 @@
 <script src="./Qgis2threejs.js"></script>
 </head> 
   <script type="module">
-    import{VRButton}from'https://unpkg.com/three@0.128.0/examples/jsm/webxr/VRButton.js';
-    const timer=setInterval(()=>{if(typeof app!=='undefined'&& app.renderer){clearInterval(timer);
-      app.renderer.xr.enabled=true;
-      app.render.setAnimationLoop(()=>{app.renderer();});                                                                       
-    document.body.appendChild(VRButton.createButton(app.renderer));}
-    },200);                            
+    import{VRButton}from'https://unpkg.com/three@0.128.0/examples/jsm/webxr/VRButton.js';                                                                      
+    document.body.appendChild(VRButton.createButton(app.renderer));                            
   </script>
 <body>
 <div id="view">
