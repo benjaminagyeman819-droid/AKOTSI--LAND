@@ -16,7 +16,8 @@
 <script src="./threejs/ViewHelper.js"></script>
 <script src="./Qgis2threejs.js"></script>
 </head> 
-  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/VRControls.js"></script>
+  <script type="module">
+    import {VRButton} from'https://unpkg.com/three@0.128.0/examples/jsm/webxr/VRButton.js';document.body.appendChild(VRButton.createButton(app.renderer));</script>
 <body>
 <div id="view">
   <div id="northarrow"></div>
