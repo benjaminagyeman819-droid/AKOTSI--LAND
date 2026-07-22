@@ -18,8 +18,8 @@
 </head> 
   <script type="module">
     import{VRButton}from'https://unpkg.com/three@0.128.0/examples/jsm/webxr/VRButton.js';
-    app.renderer.xr.enabled=true;
-    document.body.appendChild(VRButton.createButton(app.renderer));
+    window.addEventListener('load',()=>{app.renderer.xr.enabled=true;
+    document.body.appendChild(VRButton.createButton(app.renderer));});
   </script>
 <body>
 <div id="view">
